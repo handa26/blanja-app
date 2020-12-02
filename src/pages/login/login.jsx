@@ -1,45 +1,61 @@
 import React from "react";
 
-import "../../styles/login.module.css";
 import BlanjaLogo from "../../assets/blanja-logo.svg";
+import "../../styles/login.css";
 
 const Login = () => {
   return (
     <>
-      <div className='d-flex flex-column justify-content-center align-items-center'>
-        <header className='container d-flex flex-column justify-content-center'>
-          <div className='icon-head'>
-            <img src={BlanjaLogo} alt='Logo Blanja' />
+      <section id='form-container'>
+        <div class='container'>
+          <div class='logo'>
+            <img src={BlanjaLogo} alt='Blanja Logo' />
+            <h1>Blanja</h1>
           </div>
-
-          <div class='row justify-content-center'>
-            <div class='head'>
-              <p>Please login with your account</p>
-            </div>
+          <h2>Please login with your account</h2>
+          <div class='btn-group'>
+            <a href='#' class='btn btn-ghost'>
+              Customer
+            </a>
+            <a href='#' class='btn btn-full'>
+              Seller
+            </a>
           </div>
-        </header>
-
-        <div className='container d-flex flex-column p-0'>
-          <div className='form pr-sm-5 pl-sm-5'>
-            <input className="w-100" type="email" name="Email" id="email" placeholder="Email"/>
-          <input className="w-100" type="password" name="Password" id="password" placeholder="Password"/>
-          <div className="txtLink d-flex justify-content-end">
-            <a className="custom" href="./reset-Password.html">Forgot password?</a>
+          <div class='form-section'>
+            <form class='fill-form'>
+              <div class='col-input form-input'>
+                <input
+                  type='email'
+                  name='email'
+                  id='email'
+                  placeholder='Email'
+                />
+              </div>
+              <div class='col-input form-input'>
+                <input
+                  type='password'
+                  name='password'
+                  id='password'
+                  placeholder='Password'
+                />
+              </div>
+              <div class='reset form-input'>
+                <a href='reset-password1.html'>Forgot password?</a>
+              </div>
+              <div class='submit form-input'>
+                <a class='submit-btn' href='index.html' type='submit'>
+                  LOGIN
+                </a>
+              </div>
+            </form>
           </div>
-          <div className="submit">
-            <input className="w-100 btn submit" type="submit" value="PRIMARY" />
-          </div>
-          <div className="txtLink d-flex justify-content-center">
-            <p>
-              Don't have a Blanja account?
-              <a href="./register-User.html">Register</a>
-            </p>
-          </div>
-          </div>
+          <p class='text'>
+            Don't have a Blanja account? <a href='signup.html'>Register</a>
+          </p>
         </div>
-      </div>
+      </section>
     </>
   );
-}
+};
 
 export default Login;

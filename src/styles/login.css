@@ -1,0 +1,192 @@
+/* ================================================== */
+/* REUSABLE COMPONENTS */
+/* ================================================== */
+
+a {
+  text-decoration: none;
+}
+
+/* === Buttons === */
+/* .btn-group {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+} */
+
+.btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  width: 123px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-full {
+  background-color: #db3022;
+  width: 123px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #fff;
+}
+
+.btn-full:hover {
+  background-color: #ad1b0d;
+}
+
+.btn-ghost {
+  border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: gray;
+}
+
+.btn-ghost:hover {
+  border: 1px solid #db3022;
+  background-color: #db3022;
+  color: #fff;
+}
+
+/* ================================================== */
+/* LOGIN/SIGN text SECTION */
+/* ================================================== */
+#form-container {
+  margin: 100px 100px;
+  margin-top: 85px;
+  text-align: center;
+}
+
+#form-container h2 {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  color: #db3022;
+}
+
+.logo h1 {
+  margin: 20px 0px 0px 10px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 20px;
+}
+
+/* === Form === */
+.fill-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section {
+  margin-top: 50px;
+}
+
+.reset {
+  display: inline-block;
+  margin-top: 25px;
+  width: 400px;
+  font-size: 14px;
+  text-align: right;
+  align-self: center;
+}
+
+.reset a {
+  color: #db3022;
+}
+
+.text {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.text a {
+  color: #db3022;
+}
+
+.txt-confirm {
+  color: #9b9b9b;
+  width: 75%;
+  margin: 20px auto;
+}
+
+.col-input {
+  margin-top: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="name"],
+input[type="tel"],
+input[type="text"] {
+  min-width: 400px;
+  margin: auto;
+  padding: 7px 0px 7px 15px;
+  height: 48px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  display: inline-block;
+  font-size: 14px;
+  min-width: 400px;
+  margin-top: 25px;
+  padding: 15px 30px;
+  border-radius: 200px;
+  background-color: #db3022;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #ad1b0d;
+}
+
+* SMALL DEVICES 0 - 480px */ @media only screen and (max-width: 480px) {
+  /* ================================================== */
+  /* LOGIN PAGE */
+  /* ================================================== */
+  #form-container h2 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="name"],
+  input[type="tel"],
+  input[type="text"] {
+    min-width: 100px;
+  }
+
+  .form-input {
+    align-self: center;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 190px;
+    text-decoration: none;
+  }
+
+  .reset {
+    width: 190px;
+  }
+}
