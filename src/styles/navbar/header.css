@@ -1,0 +1,50 @@
+/* === Navbar === */
+.input-group {
+  width: 60%;
+}
+
+.input-group-text {
+	border-radius: 200px;
+}
+
+.form-control {
+	border-radius: 200px;
+}
+
+.navbar-light .navbar-brand {
+  color: #db3022;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  /* === Navbar === */
+  .input-group {
+    width: 165px;
+  }
+
+  .filter-icon {
+    padding: 0px 0px;
+  }
+
+  .cart-icon {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-login,
+  .btn-signup {
+    display: block;
+    margin: 5px 0px;
+    width: 100%;
+  }
+}

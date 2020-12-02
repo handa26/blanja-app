@@ -1,0 +1,8 @@
+.cart {
+	color: #9b9b9b;
+	transition: color 0.2s;
+}
+
+.cart:hover {
+	color: #ad1b0d;
+}

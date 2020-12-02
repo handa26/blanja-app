@@ -1,0 +1,27 @@
+#new {
+  margin-top: 50px;
+}
+
+.head {
+  margin-bottom: 30px;
+  padding: 0px 10px;
+}
+
+.head h2 {
+  font-size: xx-large;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width : 500px) {
+  .flex-list {
+    padding: 0px 2px;
+  }
+}
